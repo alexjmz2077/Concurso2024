@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="icon" href="{% static 'img/pesa.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-container">
+            <img src="{% static 'img/imagen.png' %}" alt="Imagen de inicio de sesión">
+        </div>
+        <div class="login-content">
+            
+            <h2>Registrarse</h2>
+            <form action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit">Registrarme</button>
+                
+            </form> 
+            <button type="button" id="salirButton">Salir</button>        
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!--Funcion para enviar a la pagina principal -->
+<script>
+    document.getElementById('salirButton').onclick = function() {
+        window.location.href = "{% url 'index' %}";
+    };
+</script>
