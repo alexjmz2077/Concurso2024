@@ -2,7 +2,7 @@
 Para ejecutar este proyecto, necesitarás tener instalado Python y algunos paquetes específicos. A continuación se detallan los pasos para configurar el entorno adecuadamente.
 
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?98418229C024CF8D87C805B772268C90278D
+[https://prod.liveshare.vsengsaas.visualstudio.com/join?98418229C024CF8D87C805B772268C90278D](https://prod.liveshare.vsengsaas.visualstudio.com/join?98418229C024CF8D87C805B772268C90278D)
 
 ## Paso 1: Clonar el Repositorio
 ```
